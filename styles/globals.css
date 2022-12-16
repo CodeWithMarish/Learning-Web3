@@ -1,9 +1,10 @@
-html,
-body {
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700');
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+    background-color: #eee;
 }
 
 a {
@@ -15,12 +16,63 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.box{
+  padding: 36px 24px;
+  text-align: center;
+  max-width: 500px;
+}
+h2{
+  font-size: 48px;
+  font-weight: 600;
+}
+.block{
+  display: block;;
+  color: lightcoral;
+}
+.shadow-border{
+  border: 3px solid black;
+  box-shadow:4px 4px black;
+}
+.account-box{
+  text-align: center;
+  margin-top: 24px;
+}
+.account-box p{
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+ 
+}
+.btn{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: lightblue;
+  border-radius: 4px;
+  margin-top: 36px;
+  transition: transform 0.15s;
+}
+
+h2{
+  font-size: 36px;
+}
+.btn:hover{
+  transform: scale(1.05);
+}
+
+.error{
+  margin-top: 36px;
+  padding: 12px 8px;
+  color: red;
+  font-weight: 500;
+  transition: opacity 0.15s;
 }
